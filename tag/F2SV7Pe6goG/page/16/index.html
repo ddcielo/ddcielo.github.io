@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>火焰纹章 | 电波界限。</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ddcielo.github.io/favicon.ico?v=1769603399630">
+<link rel="stylesheet" href="https://ddcielo.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+
+
+
+
+
+    <script>
+      (function() {
+        // 私密标签名单
+        var privateTags = ["secret", "game", "rant", "秘密", "游戏日志", "吐槽", "日记"];
+        var currentTagName = String("火焰纹章").toLowerCase();
+        
+        // 权限校验拦截
+        if (privateTags.includes(currentTagName)) {
+          if (sessionStorage.getItem('access_token') !== 'granted') {
+            window.location.href = '/';
+          }
+        }
+      })();
+    </script>
+    <style>
+      .secret-nav-bar { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; border-bottom: 1px dashed #eee; padding-bottom: 20px; }
+      .s-nav-item { color: #999; text-decoration: none; font-size: 13px; padding: 4px 15px; border: 1px solid #eee; border-radius: 20px; transition: all 0.3s; }
+      .s-nav-item.active { border-color: #666; color: #333; background: #fafafa; }
+      .s-nav-item:hover { border-color: #aaa; color: #666; }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ddcielo.github.io">
+        <img src="https://ddcielo.github.io/images/avatar.png?v=1769603399630" class="site-logo">
+        <h1 class="site-title">电波界限。</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            👑 首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            🏷️ 标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div style="margin-top:20px;font-size:13px;color:#fff;opacity:0.85;line-height:1.6;text-shadow:1px 1px 2px rgba(0,0,0,0.3);"><span style="font-style:italic;">它能到达的地方，就是整个世界。</span><br><span id="busuanzi_container_site_uv" style="display:none;">⚓ 寻得此位面的旅者已有 <span id="busuanzi_value_site_uv" style="font-weight:bold;"></span> 人。</span><br><span id="busuanzi_container_site_pv" style="display:none;">🏰 旅者们已经在这里度过 <span id="busuanzi_value_site_pv" style="font-weight:bold;"></span> 次流连忘返的时光。</span></div>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="  " target="_blank">D·D·C</a> <a href="https://phyilo-fox.github.io/" target="_blank">🦊</a> | <a class="rss" href="https://ddcielo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">分类: 火焰纹章</h2>
+
+          
+
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ddcielo.github.io/post/feer-bing-lesslessjrmarthgreatergreater-21/"><h2 class="post-title">【FE·二饼】《Jr.Marth》·2</h2></a>
+                <div class="post-date">2012-11-23</div>
+                <div class="post-abstract"></div>
+              </div>
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://ddcielo.github.io/post/femb-no001/"><h2 class="post-title">【FEMB】NO.001</h2></a>
+                <div class="post-date">2012-11-20</div>
+                <div class="post-abstract"></div>
+              </div>
+            </article>
+          
+          <div class="pagination-container">
+  
+    <a href="https://ddcielo.github.io/tag/F2SV7Pe6goG/page/15/" class="prev"><i class="icon-arrow-ios-back-outline"></i> 上一页</a>
+  
+  
+    <a href="https://ddcielo.github.io/tag/F2SV7Pe6goG/page/17/" class="next">下一页 <i class="icon-arrow-ios-forward-outline"></i></a>
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

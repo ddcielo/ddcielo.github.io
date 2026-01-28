@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>观剧者的藏书阁 | 电波界限。</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ddcielo.github.io/favicon.ico?v=1769603399630">
+<link rel="stylesheet" href="https://ddcielo.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+
+
+
+
+
+    <script>
+      if (sessionStorage.getItem('access_token') !== 'granted') { window.location.href = '/'; }
+    </script>
+    <style>
+      .vault-container { text-align: center; padding: 80px 20px; }
+      .vault-nav { display: flex; justify-content: center; gap: 30px; margin-top: 40px; }
+      .vault-card { 
+        padding: 40px 20px; width: 150px; border: 1px solid #eee; border-radius: 15px;
+        text-decoration: none; color: #666; transition: 0.3s;
+      }
+      .vault-card:hover { border-color: #333; background: #fafafa; transform: translateY(-5px); }
+      .vault-card i { display: block; font-size: 30px; margin-bottom: 10px; }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ddcielo.github.io">
+        <img src="https://ddcielo.github.io/images/avatar.png?v=1769603399630" class="site-logo">
+        <h1 class="site-title">电波界限。</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            👑 首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            🏷️ 标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div style="margin-top:20px;font-size:13px;color:#fff;opacity:0.85;line-height:1.6;text-shadow:1px 1px 2px rgba(0,0,0,0.3);"><span style="font-style:italic;">它能到达的地方，就是整个世界。</span><br><span id="busuanzi_container_site_uv" style="display:none;">⚓ 寻得此位面的旅者已有 <span id="busuanzi_value_site_uv" style="font-weight:bold;"></span> 人。</span><br><span id="busuanzi_container_site_pv" style="display:none;">🏰 旅者们已经在这里度过 <span id="busuanzi_value_site_pv" style="font-weight:bold;"></span> 次流连忘返的时光。</span></div>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="  " target="_blank">D·D·C</a> <a href="https://phyilo-fox.github.io/" target="_blank">🦊</a> | <a class="rss" href="https://ddcielo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="vault-container">
+            <h1>藏书阁</h1>
+            <p style="color:#999">「 这里的文字，只留给同频的人 」</p>
+            <div class="vault-nav">
+              <a href="/tag/secret/" class="vault-card"><i>🔒</i>日记</a>
+              <a href="/tag/game/" class="vault-card"><i>🎮</i>游戏日志</a>
+              <a href="/tag/rant/" class="vault-card"><i>💼</i>吐槽</a>
+            </div>
+            <div style="margin-top: 60px;"><a href="/" style="color:#ccc; text-decoration:none; font-size:12px;">← 返回现实世界</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

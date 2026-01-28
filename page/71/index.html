@@ -1,0 +1,230 @@
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>电波界限。</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ddcielo.github.io/favicon.ico?v=1769603399630">
+<link rel="stylesheet" href="https://ddcielo.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+
+
+
+
+
+    <style>
+      /* 【功能：禁止选中、复制与图片拖拽保护】 */
+      body { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+      img { -webkit-user-drag: none; pointer-events: none; }
+      .end-image { pointer-events: auto !important; cursor: pointer; }
+
+      /* 分页器布局 */
+      .pagination-container { display: flex; justify-content: space-between; align-items: center; margin-top: 50px; min-height: 40px; }
+      .prev-page, .next-page { display: flex; align-items: center; color: #666; text-decoration: none; transition: all 0.3s; font-size: 15px; }
+      .next-page { margin-left: auto; }
+      .prev-page:hover, .next-page:hover { color: #000; opacity: 0.7; }
+
+      /* 【终点站设计：图片原始大小 + 提示文字】 */
+      .end-station { text-align: center; padding: 60px 20px; color: #999; }
+      .end-image { 
+        max-width: none; 
+        width: auto; 
+        height: auto; 
+        border-radius: 12px; 
+        margin-bottom: 25px; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+      }
+      .end-text { font-size: 16px; letter-spacing: 1px; margin-bottom: 25px; font-style: italic; color: #888; }
+      
+      /* 【需求修改：显眼的返回按钮样式】 */
+      .back-home-btn { 
+        display: inline-block; 
+        padding: 10px 24px; 
+        border: 2px solid #333; 
+        border-radius: 30px; 
+        color: #fff !important; 
+        background-color: #333; 
+        font-size: 15px; 
+        font-weight: bold; 
+        text-decoration: none; 
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+      .back-home-btn:hover {
+        background-color: #555; 
+        border-color: #555;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.25); 
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ddcielo.github.io">
+        <img src="https://ddcielo.github.io/images/avatar.png?v=1769603399630" class="site-logo">
+        <h1 class="site-title">电波界限。</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            👑 首页
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            🏷️ 标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div style="margin-top:20px;font-size:13px;color:#fff;opacity:0.85;line-height:1.6;text-shadow:1px 1px 2px rgba(0,0,0,0.3);"><span style="font-style:italic;">它能到达的地方，就是整个世界。</span><br><span id="busuanzi_container_site_uv" style="display:none;">⚓ 寻得此位面的旅者已有 <span id="busuanzi_value_site_uv" style="font-weight:bold;"></span> 人。</span><br><span id="busuanzi_container_site_pv" style="display:none;">🏰 旅者们已经在这里度过 <span id="busuanzi_value_site_pv" style="font-weight:bold;"></span> 次流连忘返的时光。</span></div>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="  " target="_blank">D·D·C</a> <a href="https://phyilo-fox.github.io/" target="_blank">🦊</a> | <a class="rss" href="https://ddcielo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+          
+          
+          
+            
+          
+            
+          
+
+          <div class="pagination-container">
+            
+              <a href="https://ddcielo.github.io/page/70/" class="prev-page">← 上一页</a>
+            
+            
+          </div>
+
+          
+          
+            <div class="end-station">
+              <img src="/Pageend.png" class="end-image" alt="End">
+              <div class="end-text">后面没有东西啦，看看别的地方吧！</div>
+              <a href="/" class="back-home-btn">>> 返回首页 <<</a>
+            </div>
+          
+
+          <p align="right">
+            <font color="#E0E0E0"><font size="3">——————————————</font></font>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+
+    <script>
+      (function() {
+        // --- 功能：禁止右键菜单 ---
+        document.oncontextmenu = function() { return false; };
+
+        function navigateTo(path, hashedSecret) {
+          if (hashedSecret) {
+            var pw = prompt("请输入权限秘钥：", "");
+            if (pw && btoa(pw) === hashedSecret) { 
+              sessionStorage.setItem('access_token', 'granted');
+              window.location.href = path;
+            } else if (pw !== null) {
+              alert("权限不足，电波未匹配。");
+            }
+          } else {
+            sessionStorage.setItem('access_token', 'granted');
+            window.location.href = path;
+          }
+        }
+
+        // --- 功能：键盘监听多重暗号 ---
+        var lastTime = 0; var keys = "";
+        window.addEventListener('keydown', function(e) {
+          var now = new Date().getTime();
+          if (now - lastTime > 800) { keys = ""; }
+          lastTime = now;
+          keys += e.key.toLowerCase();
+
+          if (keys.endsWith('ddc')) { keys = ""; navigateTo('/post/v-x92k-hidden-chamber/', 'MTIzNDU2'); }
+          if (keys.endsWith('art')) { keys = ""; navigateTo('/tag/画廊/', null); }
+          if (keys.endsWith('box')) { keys = ""; navigateTo('/post/about/', 'ODg4ODg4'); }
+          
+          // --- 功能：禁止 F12 和 Ctrl+U 源码查看 ---
+          if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === 85)) return false;
+        });
+
+        // --- 功能：终点站图片长按 5 秒跳转 ---
+        window.addEventListener('load', function() {
+          var img = document.querySelector('.end-image');
+          if (img) {
+            var timer;
+            var triggerAction = function() { navigateTo('/post/v-x92k-hidden-chamber/', 'MTIzNDU2'); };
+            img.addEventListener('touchstart', function() { timer = setTimeout(triggerAction, 5000); });
+            img.addEventListener('touchend', function() { clearTimeout(timer); });
+            img.addEventListener('mousedown', function() { timer = setTimeout(triggerAction, 5000); });
+            img.addEventListener('mouseup', function() { clearTimeout(timer); });
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
